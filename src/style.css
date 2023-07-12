@@ -1,0 +1,44 @@
+.encabezado{
+    background-image: url(/images/encabezado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.content{
+    text-align: center;
+    margin: 10px;
+}
+
+.img1{
+    width: 300px;
+}
+
+button{
+    margin: 5px;
+    display: inline-block;
+    background: rgb(253, 216, 3);
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1em;
+}
+
+h1{
+    color: rgb(33, 164, 216);
+    display: flex;
+    justify-content: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 3em;
+    -webkit-text-stroke: 1px greenyellow;
+}
+
+h2{
+    color: rgb(33, 164, 216);
+    display: flex;
+    justify-content: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 3em;
+    -webkit-text-stroke: 1px black;
+}
