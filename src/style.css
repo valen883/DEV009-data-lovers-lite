@@ -5,14 +5,18 @@
     height: 220px;
 }
 
-.content{
+.card {
+    box-shadow: 0 8px 20px 0 rgba(229, 245, 2, 0.938);
+    border-radius: 50px; /* 5px rounded corners */
     text-align: center;
     margin: 10px;
 }
 
-.img1{
-    width: 300px;
-}
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+
 
 button{
     margin: 5px;
