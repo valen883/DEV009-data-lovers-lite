@@ -5,23 +5,58 @@
     height: 220px;
 }
 
-.content{
-    height: 70px;
-    margin: 30px;
+.bod{
+    max-height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card {
-    box-shadow: 0 8px 20px 0 rgba(229, 245, 2, 0.938);
-    border-radius: 50px; /* 5px rounded corners */
+.slideContent{
+    margin: 0 40px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: bisque;
+    width: 320px;
+}
+
+.imageContent, .cardContent{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardImage{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+}
+
+.cardImage .cardImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.name{
+    font-size: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 14px;
+    color: gray;
     text-align: center;
-    margin: 10px;
 }
-
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    border-radius: 10px 10px 0 0;
-  }
-
 
 button{
     font-family: 'Metal Mania', cursive;
