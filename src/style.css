@@ -18,7 +18,7 @@
 
 .card{
     border-radius: 25px;
-    background-color: bisque;
+    background-color: #BDE3FF;
     width: 320px;
 }
 
@@ -80,7 +80,7 @@ h1{
 
 h2{
     color: rgb(33, 164, 216);
-    display: flex;
+    display: inline;
     justify-content: center;
     font-family: 'Metal Mania', cursive;
     font-size: 3em;
