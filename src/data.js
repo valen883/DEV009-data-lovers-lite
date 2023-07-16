@@ -7,6 +7,7 @@ export const familiaSanchez = (data) => {
   return data.filter((item) => ids.includes(item.id));
 };
 
+// funciòn que convierta los personajes en el html para volver a ejecutar y reemplace el contenido
 export const anotherExample = () => {
   return 'OMG';
 };

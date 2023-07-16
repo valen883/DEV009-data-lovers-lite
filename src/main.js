@@ -2,14 +2,30 @@ import { familiaSanchez } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 //seleccionar la calse cardWrapper, guardar carWrapper en una constante dataTarjetas
-const dataTarjetas = document.querySelector("cardWrapper");
+const dataTarjetas = document.querySelector(".cardWrapper");
 const princ = familiaSanchez(data.results);
+dataTarjetas.innerHTML = "";
+let todos = "";
 
-for(i = 0; i>=princ; i++) {
+for ( let personaje of data.results) {
 // a dataTarjetas hacerle un dataTarjetas.innerHTML += string con index.html en card
-  const i = dataTarjetas.innerHTML += ("cardWrapper");
-}
-
+    todos +=` <div class="card">
+    <div class="imageContent">
+      <span class="overlay"></span>
+      <div class="cardImage">
+        <img src="${personaje.image}" alt="" class="cardImg">
+      </div>
+    </div>
+    <div class="cardContent">
+      <h4 class="name">${personaje.name}</h4>
+      <h4 class="species">${personaje.species}</h4>
+      <h4 class="status">${personaje.status}</h4>
+    </div>
+  </div>`
+  console.log(personaje);
+} 
+dataTarjetas.innerHTML = todos;
+     
 //tu código que tenga que ver con mostrar los datos en la pantalla.
 //Con esto nos referimos básicamente a la interacción con el DOM.
 
