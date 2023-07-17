@@ -17,9 +17,9 @@ for ( let personaje of data.results) {
       </div>
     </div>
     <div class="cardContent">
-      <h4 class="name">${personaje.name}</h4>
-      <h4 class="species">${personaje.species}</h4>
-      <h4 class="status">${personaje.status}</h4>
+      <p class="name">${personaje.name}</p>
+      <a class="species">${personaje.species}</a>
+      <a class="status">${personaje.status}</a>
     </div>
   </div>`
   console.log(personaje);
@@ -29,20 +29,26 @@ dataTarjetas.innerHTML = todos;
 //tu código que tenga que ver con mostrar los datos en la pantalla.
 //Con esto nos referimos básicamente a la interacción con el DOM.
 
-const fCap = document.getElementById('cap');
+const fCap = document.getElementById('esp');
 fCap.addEventListener("click", function(){
-    console.log("si");
-    document.getElementById("capitulo").style.display = "flex"
-    document.getElementById("protagonistas").style.display ="none"
-    document.getElementById("todoslospersonajes").style.display = "none"
+    document.getElementById("especie").style.display = "flex"
+    document.getElementById("principal").style.display ="none"
+    document.getElementById("estado").style.display = "none"
+    document.getElementById("locacion").style.display = "none"
 })
 
 const fLoct = document.getElementById('loct');
 fLoct.addEventListener("click", function(){
-    console.log("yass");
+  document.getElementById("locacion").style.display = "flex"
+  document.getElementById("principal").style.display ="none"
+  document.getElementById("estado").style.display = "none"
+  document.getElementById("especie").style.display = "none"
 })
 
-const fall = document.getElementById('allP');
+const fall = document.getElementById('stat');
 fall.addEventListener("click", function(){
-    console.log("obvi");
+  document.getElementById("estado").style.display = "flex"
+  document.getElementById("principal").style.display ="none"
+  document.getElementById("locacion").style.display = "none"
+  document.getElementById("especie").style.display = "none"
 })
