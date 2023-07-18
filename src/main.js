@@ -45,10 +45,17 @@ fLoct.addEventListener("click", function(){
   document.getElementById("especie").style.display = "none"
 })
 
-const fall = document.getElementById('stat');
-fall.addEventListener("click", function(){
+const fstat = document.getElementById('stat');
+fstat.addEventListener("click", function(){
   document.getElementById("estado").style.display = "flex"
   document.getElementById("principal").style.display ="none"
+  document.getElementById("locacion").style.display = "none"
+  document.getElementById("especie").style.display = "none"
+})
+  const fall = document.getElementById('allp');
+fall.addEventListener("click", function(){
+  document.getElementById("principal").style.display = "flex"
+  document.getElementById("estado").style.display ="none"
   document.getElementById("locacion").style.display = "none"
   document.getElementById("especie").style.display = "none"
 })
