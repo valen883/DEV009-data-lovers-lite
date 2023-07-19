@@ -1,9 +1,11 @@
-import { familiaSanchez } from './data.js';
+import { especieF, estadF } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 //seleccionar la calse cardWrapper, guardar carWrapper en una constante dataTarjetas
 const dataTarjetas = document.querySelector(".cardWrapper");
-const princ = familiaSanchez(data.results);
+//const princ = familiaSanchez(data.results);
+const std = estadF(data.results);
+const spc = especieF(data.results);
 dataTarjetas.innerHTML = "";
 let todos = "";
 
@@ -22,24 +24,25 @@ for ( let personaje of data.results) {
       <a class="status">${personaje.status}</a>
     </div>
   </div>`
-  console.log(personaje);
+  //console.log(personaje);
 } 
 dataTarjetas.innerHTML = todos;
      
 //tu código que tenga que ver con mostrar los datos en la pantalla.
 //Con esto nos referimos básicamente a la interacción con el DOM.
 
-const fCap = document.getElementById('esp');
-fCap.addEventListener("click", function(){
+const fSpecie = document.getElementById('esp');
+fSpecie.addEventListener("click", function(){
     document.getElementById("especie").style.display = "flex"
     document.getElementById("principal").style.display ="none"
     document.getElementById("estado").style.display = "none"
-    document.getElementById("locacion").style.display = "none"
+    document.getElementById("ordenar").style.display = "none"
+    console.log(spc);
 })
 
-const fLoct = document.getElementById('loct');
+const fLoct = document.getElementById('ordenr');
 fLoct.addEventListener("click", function(){
-  document.getElementById("locacion").style.display = "flex"
+  document.getElementById("ordenar").style.display = "flex"
   document.getElementById("principal").style.display ="none"
   document.getElementById("estado").style.display = "none"
   document.getElementById("especie").style.display = "none"
@@ -49,13 +52,14 @@ const fstat = document.getElementById('stat');
 fstat.addEventListener("click", function(){
   document.getElementById("estado").style.display = "flex"
   document.getElementById("principal").style.display ="none"
-  document.getElementById("locacion").style.display = "none"
+  document.getElementById("ordenar").style.display = "none"
   document.getElementById("especie").style.display = "none"
+  console.log(std);  
 })
   const fall = document.getElementById('allp');
 fall.addEventListener("click", function(){
   document.getElementById("principal").style.display = "flex"
   document.getElementById("estado").style.display ="none"
-  document.getElementById("locacion").style.display = "none"
+  document.getElementById("ordenar").style.display = "none"
   document.getElementById("especie").style.display = "none"
 })
