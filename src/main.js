@@ -21,7 +21,8 @@ for ( let personaje of data.results) {
     <div class="cardContent">
       <p class="name">${personaje.name}</p>
       <a class="species">${personaje.species}</a>
-      <a class="status">${personaje.status}</a>
+      <a class="status">${personaje.status}</a> 
+      <a class="status">${personaje.origin.name}</a> 
     </div>
   </div>`
   //console.log(personaje);
@@ -38,15 +39,8 @@ fSpecie.addEventListener("click", function(){
     document.getElementById("estado").style.display = "none"
     document.getElementById("ordenar").style.display = "none"
     console.log(spc);
-})
-
-const fLoct = document.getElementById('ordenr');
-fLoct.addEventListener("click", function(){
-  document.getElementById("ordenar").style.display = "flex"
-  document.getElementById("principal").style.display ="none"
-  document.getElementById("estado").style.display = "none"
-  document.getElementById("especie").style.display = "none"
-})
+  })
+   
 
 const fstat = document.getElementById('stat');
 fstat.addEventListener("click", function(){
@@ -62,4 +56,12 @@ fall.addEventListener("click", function(){
   document.getElementById("estado").style.display ="none"
   document.getElementById("ordenar").style.display = "none"
   document.getElementById("especie").style.display = "none"
+
+  const ord = document.getElementById('ordenr');
+ord.addEventListener("click", function(){
+  document.getElementById("ordenar").style.display = "flex"
+  document.getElementById("principal").style.display ="none"
+  document.getElementById("estado").style.display = "none"
+  document.getElementById("especie").style.display = "none"
+})
 })
