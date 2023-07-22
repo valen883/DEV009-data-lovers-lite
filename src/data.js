@@ -9,13 +9,3 @@ export const especieF = (data) => {
   return data.filter((item) => espec.includes(item.species));
 };
 
-
-export const estadF = (data) => {
-  const estd = ["Alive"]
-  return data.filter((item) => estd.includes(item.status));
-};
-
-export const locF = (data) => {
-  const locat = [""]
-  return data.filter((item) => locat.includes(item.location));
-};

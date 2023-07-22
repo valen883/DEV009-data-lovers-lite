@@ -1,9 +1,8 @@
-import { especieF, estadF } from './data.js';
+import { especieF} from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const dataTarjetas = document.querySelector(".cardWrapper");
-const std = estadF(data.results);
 const spc = especieF(data.results);
 dataTarjetas.innerHTML = "";
 let todos = "";
@@ -40,7 +39,6 @@ function pintarCards(personajes){
   fSpecie.addEventListener("click", function(){
     document.getElementById("especie").style.display = "flex"
     document.getElementById("principal").style.display ="none"
-    document.getElementById("estado").style.display = "none"
     document.getElementById("ordenar").style.display = "none"
     document.getElementById("especie").innerHTML =""; //limpiar lo que haya antes
     //crear boton
@@ -76,18 +74,9 @@ function pintarCards(personajes){
   //const crearTarjetas.innerHTML = "";
   const crearTarjetas = document.createElement("div");
   
-  const fstat = document.getElementById('stat');
-  fstat.addEventListener("click", function(){
-  document.getElementById("estado").style.display = "flex"
-  document.getElementById("principal").style.display ="none"
-  document.getElementById("ordenar").style.display = "none"
-  document.getElementById("especie").style.display = "none"
-  console.log(std);  
-})
   const fall = document.getElementById('allp');
-fall.addEventListener("click", function(){
+  fall.addEventListener("click", function(){
   document.getElementById("principal").style.display = "flex"
-  document.getElementById("estado").style.display ="none"
   document.getElementById("ordenar").style.display = "none"
   document.getElementById("especie").style.display = "none"
 
@@ -95,7 +84,6 @@ fall.addEventListener("click", function(){
 ord.addEventListener("click", function(){
   document.getElementById("ordenar").style.display = "flex"
   document.getElementById("principal").style.display ="none"
-  document.getElementById("estado").style.display = "none"
   document.getElementById("especie").style.display = "none"
 })
 })
