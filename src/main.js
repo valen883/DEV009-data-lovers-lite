@@ -63,7 +63,9 @@ function pintarCards(personajes){
               </div>
             </div>
             <div class="cardContent">
+            <p class="species">${filter1.name}</p>
             <a class="species">${filter1.species}</a>
+            <a class="status">${filter1.gender}</a> 
             </div>
             </div>`
           } crearTarjetas.innerHTML = especie1;

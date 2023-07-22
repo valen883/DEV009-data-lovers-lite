@@ -110,7 +110,9 @@ h2{
 }
 
 #especie{
-    display: none;
+    display: flex;
+    justify-content: center
+
 }
 
 #locacion{
