@@ -15,16 +15,48 @@
     <div class="content"> 
       <button id="esp"> <strong>Por especie</strong></button>
       <button id="allp"><strong>Todos los personajes </strong> </button>
-      <button id="ordenr"><strong>Ordenar</strong> </button>
     </div>
   
     <hr>
     
+    <section id="especie">
+
+    </section>
+
+    <div>
+      <label for="sorting">Ordenar por:</label>
+  
+      <select id="sorting">
+        <option value="popularity">Popularidad</option>
+        <option value="name">Nombre</option>
+        <option value="status">Estado</option>
+        <option value="species">Especie</option>
+        <option value="type">Tipo</option>
+        <option value="gender">Genero</option>
+      </select>
+      
+    </div>
     
+    <div>
+      <label>
+        <input type="checkbox" name="species" value="human">
+        Human
+     </label>
+     <label>
+       <input type="checkbox" name="species" value="alien">
+       Alien
+     </label>
+     <label>
+       <input type="checkbox" name="species" value="humanoid">
+       Humanoid
+     </label>
+    </div>
+
+
     <section class="bod" id="principal">
       <div class="slideContainer">
         <div class="slideContent">
-          <div class="cardWrapper">    
+          <div class="cardWrapper" id="characters">    
           </div>
         </div>
       </div>
@@ -36,13 +68,8 @@
         </div>
       </div>
     </div>
-    <section id="especie">
+    
 
-    </section>
-
-    <section id="ordenar">
-      <p>ordenar</p>
-    </section>
     
   </body>
 </html>
