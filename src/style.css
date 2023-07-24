@@ -69,20 +69,25 @@
     text-align: center;
 }
 
-.content{
-    display: flex;
-    margin: 40px;
-    justify-content: center;
-    font-size: larger;
+.filt{
+    margin: 15px;
+    border: 1px solid black;
+    background: yellow;
+    font-family: 'Metal Mania', cursive;
+    font-size: 20px;
 }
 
+.order{
+    margin: 10px;
+    border: 1px solid black;
+    background: yellow;
+    font-family: 'Metal Mania', cursive;
+    font-size: 20px;
+}
 body{
     margin: 50px;
 }
 
-button{
-    display: none;
-}
 
 h1{
     color: rgb(33, 164, 216);
@@ -115,3 +120,7 @@ h2{
 #estado{
     display: none;
 }
+
+button{
+    display: none;
+    }

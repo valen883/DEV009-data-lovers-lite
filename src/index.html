@@ -12,10 +12,8 @@
     <script src="main.js" type="module"></script>
     <header class="encabezado"></header>
     <h1>Conoce los personajes</h1>
-    <div class="content"> 
-      <button id="esp"> <strong></strong></button>
-      <button id="allp"><strong></strong> </button>
-    </div>
+      <button id="esp"></button>
+      <button id="allp"></button>
   
     <hr>
     
@@ -23,7 +21,7 @@
 
     </section>
 
-    <div>
+    <div class="order">
       <label for="sorting">Ordenar por:</label>
   
       <select id="sorting">
@@ -37,9 +35,9 @@
       
     </div>
     
-    <div>
+    <div class="filt">
       <label>
-        <p>Filtrar por: </p>
+        <label> Filtrar por: </label>
         <input type="checkbox" name="species" value="human">
         Human
      </label>
@@ -52,7 +50,8 @@
        Humanoid
      </label>
     </div>
-
+    
+    <hr>
 
     <section class="bod" id="principal">
       <div class="slideContainer">
