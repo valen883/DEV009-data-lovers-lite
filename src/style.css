@@ -81,14 +81,7 @@ body{
 }
 
 button{
-    font-family: 'Metal Mania', cursive;
-    display: inline-block;
-    background: rgb(253, 216, 3);
-    justify-content: center;
-    font-size: 1em;
-    margin: 5px;
-    height: 4em;
-    width: 10em;
+    display: none;
 }
 
 h1{

@@ -42,14 +42,9 @@ const fSpecie = document.getElementById('esp');
 fSpecie.addEventListener("click", function () {
   //crear boton
   const botonSoloHumanos = document.createElement("button")
-  botonSoloHumanos.innerText = "Filtrar solo humanos";
-  document.getElementById("especie").appendChild(botonSoloHumanos);
-  //filtrar por boton
   botonSoloHumanos.addEventListener("click", () => {
-    console.log("click");
-    //crearTarjetas.innerHTML = especie1; //.todos -> nueva variable
     const spc = especieF(data.results);
-    console.log(spc); //crearTarjetas.innerHTML = "variabe"
+    //console.log(spc);
     pintarCards(spc);
   })
 })
