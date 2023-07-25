@@ -7,12 +7,12 @@ const filters = {
 };
 const sorting = {
   field: "popularity",
-}; 
+};
 
 function pintarCards(personajes, campos = ["name", "species", "status", "type", "gender"]) {
   let cards = "";
   personajes = filterData(personajes, filters)
-  personajes = orderData(personajes, sorting) 
+  personajes = orderData(personajes, sorting)
   for (let personaje of personajes) {
     let contenidoCards = "";
     for (let campo of campos) {
@@ -29,9 +29,9 @@ function pintarCards(personajes, campos = ["name", "species", "status", "type", 
     ${contenidoCards}
     </div>
     </div>`
-    
+
   }
-  const cardsCharacters= document.getElementById("characters");
+  const cardsCharacters = document.getElementById("characters");
   cardsCharacters.innerHTML = cards;
   return cards
 }
@@ -51,7 +51,7 @@ fSpecie.addEventListener("click", function () {
 
 const ordenar = document.getElementById("sorting");
 
-ordenar.addEventListener("change", function() {
+ordenar.addEventListener("change", function () {
   sorting.field = ordenar.value
   pintarCards(data.results)
 });
@@ -61,12 +61,12 @@ ordenar.addEventListener("change", function() {
 const checkboxes = document.querySelectorAll("input[type=checkbox][name=species]");
 
 // Use Array.forEach to add an event listener to each checkbox.
-checkboxes.forEach(function(checkbox) {
-  checkbox.addEventListener('change', function() {
-    filters.species=
+checkboxes.forEach(function (checkbox) {
+  checkbox.addEventListener('change', function () {
+    filters.species =
       Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
-      .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
-      .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
-      pintarCards(data.results);
-  }) 
+        .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
+        .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
+    pintarCards(data.results);
+  })
 });

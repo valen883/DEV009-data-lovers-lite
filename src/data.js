@@ -1,6 +1,3 @@
-// este archivo contenga toda la funcionalidad 
-//que corresponda a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
-// estas funciones son de ejemplo
 
 // funciòn que convierta los personajes en el html para volver a ejecutar y reemplace el contenido
 
@@ -10,12 +7,12 @@ export const especieF = (data) => {
 };
 
 //Puedes usar el método sort() junto a localeCompare() 
-export const orderData = (data,sorting) => {
+export const orderData = (data, sorting) => {
   const field = sorting.field
-  if( field === "popularity"){
+  if (field === "popularity") {
     return data
   }
-  return  data.slice().sort(function (a, b) {
+  return data.slice().sort(function (a, b) {
     if (a[field] > b[field]) {
       return 1;
     }
@@ -28,10 +25,10 @@ export const orderData = (data,sorting) => {
 
 };
 
-export const filterData = (data, filters) =>{
+export const filterData = (data, filters) => {
   const especies = filters["species"];
-  if( especies.length){
+  if (especies.length) {
     data = data.filter((item) => especies.includes(item.species.toLowerCase()));
-  } 
+  }
   return data
 }

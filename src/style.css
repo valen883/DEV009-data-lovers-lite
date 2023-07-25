@@ -75,6 +75,8 @@
     background: yellow;
     font-family: 'Metal Mania', cursive;
     font-size: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
 .order{
@@ -83,6 +85,8 @@
     background: yellow;
     font-family: 'Metal Mania', cursive;
     font-size: 20px;
+    justify-content: center;
+    text-align: center;
 }
 body{
     margin: 50px;

@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <script src="main.js" type="module"></script>
-    <header class="encabezado"></header>
-    <h1>Conoce los personajes</h1>
-      <button id="esp"></button>
-      <button id="allp"></button>
-  
-    <hr>
-    
-    <section id="especie">
 
-    </section>
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
 
-    <div class="order">
-      <label for="sorting">Ordenar por:</label>
-  
-      <select id="sorting">
-        <option value="popularity">Popularidad</option>
-        <option value="name">Nombre</option>
-        <option value="status">Estado</option>
-        <option value="species">Especie</option>
-        <option value="type">Tipo</option>
-        <option value="gender">Genero</option>
-      </select>
-      
-    </div>
-    
-    <div class="filt">
-      <label>
-        <label> Filtrar por: </label>
-        <input type="checkbox" name="species" value="human">
-        Human
-     </label>
-     <label>
-       <input type="checkbox" name="species" value="alien">
-       Alien
-     </label>
-     <label>
-       <input type="checkbox" name="species" value="humanoid">
-       Humanoid
-     </label>
-    </div>
-    
-    <hr>
+<body>
+  <script src="main.js" type="module"></script>
+  <header class="encabezado"></header>
+  <h1>Conoce los personajes</h1>
+  <button id="esp"></button>
+  <button id="allp"></button>
 
-    <section class="bod" id="principal">
-      <div class="slideContainer">
-        <div class="slideContent">
-          <div class="cardWrapper" id="characters">    
-          </div>
-        </div>
-      </div>
-      
-    </section>
+  <hr>
+
+  <section id="especie">
+
+  </section>
+
+  <div class="order">
+    <label for="sorting">Ordenar por:</label>
+
+    <select id="sorting">
+      <option value="popularity">Popularidad</option>
+      <option value="name">Nombre</option>
+      <option value="status">Estado</option>
+      <option value="species">Especie</option>
+      <option value="type">Tipo</option>
+      <option value="gender">Genero</option>
+    </select>
+
+  </div>
+
+  <div class="filt">
+    <label>
+      <label> Filtrar por: </label>
+      <input type="checkbox" name="species" value="human">
+      Human
+    </label>
+    <label>
+      <input type="checkbox" name="species" value="alien">
+      Alien
+    </label>
+    <label>
+      <input type="checkbox" name="species" value="humanoid">
+      Humanoid
+    </label>
+  </div>
+
+  <hr>
+
+  <section class="bod" id="principal">
     <div class="slideContainer">
       <div class="slideContent">
-        <div class="cardWrapper">    
+        <div class="cardWrapper" id="characters">
         </div>
       </div>
     </div>
-    
 
-    
-  </body>
+  </section>
+  <div class="slideContainer">
+    <div class="slideContent">
+      <div class="cardWrapper">
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
 </html>
