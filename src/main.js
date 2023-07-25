@@ -13,9 +13,9 @@ function pintarCards(personajes, campos = ["name", "species", "status", "type", 
   let cards = "";
   personajes = filterData(personajes, filters)
   personajes = orderData(personajes, sorting)
-  for (let personaje of personajes) {
+  for (const personaje of personajes) {
     let contenidoCards = "";
-    for (let campo of campos) {
+    for (const campo of campos) {
       contenidoCards += `<a>${personaje[campo]}</a>
       `    }
     cards += `<div class="card">

@@ -6,7 +6,6 @@ export const especieF = (data) => {
   return data.filter((item) => espec.includes(item.species));
 };
 
-//Puedes usar el método sort() junto a localeCompare() 
 export const orderData = (data, sorting) => {
   const field = sorting.field
   if (field === "popularity") {
