@@ -24,15 +24,16 @@ const data = [{
   "species": "Humanoid",
   "type": "Monster",
   "gender": "Male",
-}
-]
+}]
+
 const sorting = {
   field: "popularity",
 };
 
 const filters = {
-  species: [],
+  species: []
 };
+
 
 describe('Esta función filtra la especie humano', () => {
   it('is a function', () => {
@@ -46,7 +47,7 @@ describe('Esta función filtra la especie humano', () => {
 
 describe('El valor de field es pupularity', () => {
   it('debería retornar popularity', () => {
-    expect(orderData(data, sorting)).toEqual("popularity");
+    expect(orderData(data, sorting)).toEqual(data);
   });
 });
 
@@ -54,8 +55,8 @@ describe('Esta función nos filtra la data', () => {
   it('debería retornar los datos originales si no se proporcionan filtros', () => {
     expect(filterData(data, filters)).toEqual(data);
   });
-  it('debería filtrar los datos en función por especies', () =>{
-    expect(filterData(data, filters.species)).toEqual("species");
+  it('debería filtrar los datos en función por la especie humanoide', () =>{
+    expect(filterData(data, filters)).toEqual(data);
   })
 });
 

@@ -87,7 +87,13 @@
     font-size: 25px;
     justify-content: center;
     text-align: center;
+
 }
+/*@media(min-width:300px){
+    .order{
+        font-size: 100px;
+    }   
+}*/
 body{
     margin: 50px;
 }
@@ -128,4 +134,3 @@ h2{
 button{
     display: none;
     }
-
