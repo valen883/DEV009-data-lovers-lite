@@ -1,4 +1,4 @@
-import { especieF, orderData } from '../src/data.js';
+import { especieF, orderData, filterData } from '../src/data.js';
 // const con array c
 const data = [{
   "name": "Rick Sanchez",
@@ -26,12 +26,15 @@ const data = [{
   "gender": "Male",
 }
 ]
-
 const sorting = {
   field: "popularity",
 };
 
-describe('es una funcion', () => {
+const filters = {
+  species: [],
+};
+
+describe('Esta función filtra la especie humano', () => {
   it('is a function', () => {
     expect(typeof especieF).toBe('function');
   });
@@ -43,6 +46,16 @@ describe('es una funcion', () => {
 
 describe('El valor de field es pupularity', () => {
   it('debería retornar popularity', () => {
-    expect(orderData(sorting)[0].field).toEqual("popularity");
+    expect(orderData(data, sorting)).toEqual("popularity");
   });
 });
+
+describe('Esta función nos filtra la data', () => {
+  it('debería retornar los datos originales si no se proporcionan filtros', () => {
+    expect(filterData(data, filters)).toEqual(data);
+  });
+  it('debería filtrar los datos en función por especies', () =>{
+    expect(filterData(data, filters.species)).toEqual("species");
+  })
+});
+

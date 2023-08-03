@@ -21,7 +21,6 @@ export const orderData = (data, sorting) => {
     // a must be equal to b
     return 0;
   });
-
 };
 
 export const filterData = (data, filters) => {
