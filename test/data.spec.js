@@ -35,7 +35,7 @@ const filters = {
 };
 
 
-describe('Esta función filtra la especie humano', () => {
+describe('Función especieF', () => {
   it('is a function', () => {
     expect(typeof especieF).toBe('function');
   });
@@ -45,18 +45,25 @@ describe('Esta función filtra la especie humano', () => {
   });
 });
 
-describe('El valor de field es pupularity', () => {
-  it('debería retornar popularity', () => {
+describe('Función orderData', () => {
+  it('debería retornar la data original', () => {
     expect(orderData(data, sorting)).toEqual(data);
   });
 });
 
-describe('Esta función nos filtra la data', () => {
+describe('Función filterData', () => {
   it('debería retornar los datos originales si no se proporcionan filtros', () => {
     expect(filterData(data, filters)).toEqual(data);
   });
-  it('debería filtrar los datos en función por la especie humanoide', () =>{
+  it('debería filtrar los datos por la especie humanoide', () => {
     expect(filterData(data, filters)).toEqual(data);
   })
+  it('Comparación cuando a[field] es mayor que b[field]', () => {
+    const a = { id: 1, value: 10 };
+    const b = { id: 2, value: 5 };
+    const field = 'value';
+
+    expect( orderData([a, b], { field })).toBe(1);
+  });
 });
 
