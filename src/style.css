@@ -89,11 +89,6 @@
     text-align: center;
 
 }
-/*@media(min-width:300px){
-    .order{
-        font-size: 100px;
-    }   
-}*/
 body{
     margin: 50px;
 }
@@ -117,20 +112,12 @@ h2{
     -webkit-text-stroke: 1px black;
 }
 
-#especie{
-    display: flex;
-    justify-content: center
-
-}
-
-#locacion{
-    display: none;
-}
-
-#estado{
-    display: none;
-}
-
 button{
     display: none;
+    }
+/*mobile*/
+@media (max-width: 768px){
+    .order{
+        background: chartreuse;
+    }
     }

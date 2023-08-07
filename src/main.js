@@ -1,4 +1,4 @@
-import { especieF, orderData, filterData } from './data.js';
+import { orderData, filterData } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -37,17 +37,6 @@ function pintarCards(personajes, campos = ["name", "species", "status", "type", 
 }
 
 pintarCards(data.results);
-
-const fSpecie = document.getElementById('esp');
-fSpecie.addEventListener("click", function () {
-  //crear boton
-  const botonSoloHumanos = document.createElement("button")
-  botonSoloHumanos.addEventListener("click", () => {
-    const spc = especieF(data.results);
-    //console.log(spc);
-    pintarCards(spc);
-  })
-})
 
 const ordenar = document.getElementById("sorting");
 
