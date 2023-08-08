@@ -116,8 +116,30 @@ button{
     display: none;
     }
 /*mobile*/
-@media (max-width: 768px){
+@media (max-width: 320px){
     .order{
-        background: chartreuse;
+        font-size:19px;
+    }
+    .filt{
+        font-size:19px;
+    }
+    .card{
+        flex-direction: column;
+        width: 200px;
+    }
+    h1{
+        font-size: 27px;
+    }
+    body{
+        margin: 10px;
     }
     }
+    /*mobile L*/
+@media (max-width: 425px){
+    h1{
+        font-size: 30px;
+    }
+    body{
+        margin: 20px;
+    }
+}
